@@ -1,0 +1,396 @@
+
+/* === Navbar === */
+nav.navbar {
+  padding: clamp(0rem, 2vw, 2rem);
+
+}
+
+nav>div {
+  padding: 0 !important;
+}
+
+/* === Logo Text === */
+.gradient-text {
+  background: linear-gradient(to right, #FA6E00, #E60026);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-family: 'Leckerli One', cursive;
+}
+
+/* === Contact Button === */
+.btn.contact {
+  padding: clamp(0.25rem, 1vw, 1.5rem);
+  font-weight: 500;
+  background: linear-gradient(to right, #FA6E00, #E60026);
+  color: #121212;
+  border: none;
+  border-radius: 0rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  white-space: nowrap;
+
+}
+
+.btn.contact:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(250, 110, 0, 0.4);
+  text-decoration: none;
+  background: #FA6E00;
+}
+
+/* === Toggler (Hamburger) === */
+.custom-toggler {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: none;
+  margin-right: 1rem;
+  padding: 0;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(250, 110, 0, 0.2);
+  transition: transform 0.3s ease;
+
+}
+
+.custom-toggler:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Hamburger Lines */
+.hamburger-lines {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+}
+
+.hamburger-lines span {
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(to right, #FA6E00, #E60026);
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+/* === Offcanvas Menu === */
+.offcanvas.offcanvas-start {
+  width: clamp(200px, 40vw, 500px);
+}
+
+.offcanvas .offcanvas-title {
+  font-size: 1.25rem;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: opacity 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+#body {
+  display: flex;
+  gap: clamp(1rem, 2vw, 3rem);
+}
+
+.achievements-section {
+  max-width: 1100px;
+  flex: 1 1 0;
+}
+#biography{
+  flex: 1.5 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+.achievements-section h2 {
+  color: #4DA3FF;
+  font-size: 2rem;
+  padding: 1rem;
+}
+.custom-underline {
+  width: 15%;            /* or any width you like */
+  height: 4px;            /* thickness of the line */
+  background: linear-gradient(#E60026, #FA6E00); /* your color */
+  margin-top: 8px;        /* space between text and line */
+  margin-bottom: clamp(1rem, 2vw, 1.5rem);
+  transition: transform 0.5s ease-in-out;
+
+}
+.custom-underline:hover{
+  transform: translate(20px);
+  transition: transform 0.5s ease-in-out;
+  
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  
+}
+
+.card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease;
+}
+
+.card:hover{
+   transform: none;
+   transform: scale(1.1);
+   box-shadow: 0px 0px 20px;
+}
+
+.icon {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #4DA3FF;
+}
+
+.card h5 {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem;
+  color: #ffffff;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #cccccc;
+  line-height: 1.5;
+}
+
+/* === Home Section === */
+#home {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: clamp(1rem, 4vw, 5rem);
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+#home .hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 1 0;
+
+}
+
+#home img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  padding: auto;
+  margin: auto;
+}
+
+#home .image-container {
+  flex: 1 1 0;
+}
+
+#home h2 {
+  font-size: clamp(2.5rem, 4.75vw, 6rem);
+}
+
+@media (max-width: 1000px) {
+  #home {
+    flex-direction: column;
+    align-items: center;
+    padding: 0%;
+
+  }
+
+  #home .hero-content {
+    padding: 2.5rem;
+    align-self: stretch;
+  }
+
+  #body{
+    flex-direction: column;
+  
+  }
+  .card{
+    max-width: 600px;
+  }
+}
+
+.red-links{
+  align-self: flex-start;
+  background: linear-gradient(to right, #FA6E00, #E60026);
+  /* Customize your gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.red-links:hover {
+  color: #FA6E00;
+  background-color: white;
+
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-top: auto;
+  /* gap: clamp(1rem, 2vw, 3rem); */
+  background: #FFFFFF0A;
+
+}
+
+footer p {
+  color: #959595;
+  text-align: center;
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: clamp(0.8rem, 3vw, 3rem);
+  ;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  color: #959595;
+}
+.email{
+  transform: scale(1.3);
+  margin-right:3rem;
+  color: #007BFF;
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+}
+.phone{
+  transform: scale(1.3);
+  margin-left:1rem;
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+
+}
+.social-media {
+  display: flex;
+  gap: 1rem;
+}
+
+svg {
+  height: 2.5rem;
+  width: auto;
+  color: #bababa;
+  font-family: 'Leckerli One', cursive;
+  padding: 4px;
+  border: rgba(255, 255, 255, .4) 2px solid;
+  border-radius: 4px;
+  margin: 0.5rem;
+}
+
+p svg {
+  border: none;
+}
+
+footer .contact {
+  display: flex;
+  gap: 1rem;
+}
+
+hr {
+  width: 70%;
+}
+
+@media(max-width: 468px) {
+  .navbar-brand span {
+    display: none;
+  }
+
+  footer .contact {
+    flex-direction: column;
+    gap: 0rem;
+  }
+}
+
+
+/*publications*/
+.gradient-btn {
+  padding: clamp(0.25rem, 1vw, 1.5rem);
+  font-weight: 500;
+  background: linear-gradient(to right, #FA6E00, #E60026);
+  color: #121212;
+  border: none;
+  border-radius: 0rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  white-space: nowrap;
+
+}
+
+.gradient-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(250, 110, 0, 0.4);
+  text-decoration: none;
+  background: #FA6E00;
+  color: black;
+}
+
+p.small {
+  max-width: 100ch;
+  margin: auto;
+  font-size: 1rem;
+}
+
+/* 
+a{
+  color: #FA6E00;
+  text-decoration: none;
+  transition: color 0.3s ease;
+} */
+
+.gradient-blue-link {
+  background: linear-gradient(to right, #007BFF, #00BFFF);
+  /* Deep blue gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background 0.4s ease;
+  text-decoration: none;
+  font-weight: 500;
+  border: 0px;
+}
+
+.gradient-blue-link:hover {
+  background: linear-gradient(to right, #66BFFF, #B3E5FC);
+  /* Lighter blue on hover */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.course-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.card {
+  background-color: #121212; /* for dark mode */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #333;
+}
+
+.card h4{
+  color: white;
+}
+.card p{
+  color: #bababa;
+}

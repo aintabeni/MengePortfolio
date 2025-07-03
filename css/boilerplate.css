@@ -1,0 +1,85 @@
+/* === Fonts === */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../fonts/DM_Sans/static/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Regular.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'League Gothic';
+  src: url('../fonts/LeagueGothic-Regular-VariableFont_wdth.ttf') format('truetype');
+  font-weight: 400;
+  font-stretch: 50% 200%;
+}
+
+@font-face {
+  font-family: 'Leckerli One';
+  src: url('../fonts/LeckerliOne-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+/* === Global === */
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #959595;
+
+}
+
+h1 {
+  color: #FA6E00;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: clamp(0.5rem, 2vw, 1rem);
+  margin-top: clamp(0.5rem, 2vw, 1rem);
+  text-align: center;
+}
+
+h2 {
+  background: linear-gradient(to right, #007BFF, #00BFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: clamp(0.5rem, 2vw, 1rem);
+  margin-top: clamp(0.5rem, 2vw, 1rem);
+}
+h3{
+  background-color: #d2d2d2;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: clamp(0.5rem, 2vw, 1rem);
+  margin-top: clamp(0.5rem, 2vw, 1rem);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #959595;
+}
+
+section {
+  padding: clamp(1.5rem, 5vw, 5rem);
+
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  margin-left: 1rem;
+}

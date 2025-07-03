@@ -1,0 +1,22 @@
+#name{
+    font-weight: bold;
+    color: #FA6E00;
+    font-size: 2rem;
+    font-size: clamp(1.5rem, 5vw, 7rem);
+    margin-bottom: clamp(0.5rem, 2vw, 1rem);
+
+
+}
+#stu{
+    font-weight: bold;
+    color: white;
+    font-size: clamp(1.5rem, 5vw, 7rem);
+}
+.hero-content p {
+  line-height: 1.4;   /* Tighter than default ~1.4 */
+}
+
+#name,
+#stu {
+  display: block;   /* Each span on its own line if you want */
+}
