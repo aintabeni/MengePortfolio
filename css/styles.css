@@ -175,7 +175,7 @@ nav>div {
 #home {
   display: flex;
   flex-direction: row;
-  align-items: stretch;
+  align-items: center;
   justify-content: space-between;
   gap: clamp(1rem, 4vw, 5rem);
   padding-top: 0rem;
@@ -386,6 +386,9 @@ a{
   padding: 1.5rem;
   border-radius: 0.5rem;
   border: 1px solid #333;
+}
+.course-cards .card{
+  min-width: 300px;
 }
 
 .card h4{
